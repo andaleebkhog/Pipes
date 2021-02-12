@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pipes';
+  
+  name: any;
+
+  onNameChange(value: any){
+    this.name = value.target.value;
+    console.log(this.name);
+  }
 }
