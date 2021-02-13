@@ -10,6 +10,7 @@ export class AppComponent {
   name: any;
   date: any;
   currency: any;
+  height:any;
 
   onNameChange(value: any){
     this.name = value.target.value;
@@ -21,6 +22,10 @@ export class AppComponent {
   }
 
   onCurrencyChange(value:any){
-    this.currency = value.target.value;
+    this.currency = parseFloat(value.target.value);
+  }
+
+  onHeightChange(value:any){
+    this.height = value.target.value;
   }
 }
