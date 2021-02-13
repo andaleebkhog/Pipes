@@ -12,11 +12,11 @@ export class ConvertPipe implements PipeTransform {
     }
     switch (targetedUnits){
       case 'm':
-        return value * 1.60934;
+        return value * 1609.34;
       case 'km':
-        return value * 1.60934 * 1000;
+        return value * 1.60934;
       case 'cm':
-        return value * 1.60934 * 1000 * 1000;
+        return value * 160934;
       default:
         return value * 1.60934;
 
