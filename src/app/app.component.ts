@@ -12,6 +12,12 @@ export class AppComponent {
   currency: any;
   height:any;
 
+  car = {
+    make: 'Toyota',
+    model: 'Corolla',
+    year: 2010
+  }
+
   onNameChange(value: any){
     this.name = value.target.value;
     //console.log(this.name);
